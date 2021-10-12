@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!-- mapper 为根元素节点， 一个namespace对应一个repo -->
+<mapper namespace="com.example.bmsser.repository.StuRepository">
+
+    <select id="selectAllStu" resultType="com.example.bmsser.entity.Stu">
+        select id, name from stu
+    </select>
+
+
+</mapper>
